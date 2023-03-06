@@ -1,0 +1,132 @@
+/* MAX-WIDTH VS MIN-WIDTH */
+/* It has to do with design flow. 
+Typically, with min-width patterns, 
+you're designing mobile-first. 
+With max-width patterns, 
+you're design desktop-first. */
+/* https://stackoverflow.com/questions/16647380/max-width-vs-min-width#24640497 */
+/***
+
+    SEE ABOVE
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+#container {
+  width: 100%;
+  background-color: red;
+  margin: 40px auto;
+}
+header {
+  width: 100%;
+  background-color: lightgreen;
+  height: auto;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+aside {
+  width: 100%;
+  height: 180px;
+  float: none;
+  background-color: lightslategray;
+  color: white;
+}
+/* aside {
+  width: 25%;
+  height: 700px;
+  float: left;
+  background-color: lightslategray;
+  color: white;
+} */
+#articles {
+  width: 100%;
+  float: none;
+  background-color: lightsalmon;
+  border: 1px solid darkgreen;
+  min-height: 699px;
+}
+/* #articles {
+  width: 74.8%;
+  float: left;
+  background-color: lightsalmon;
+  border: 1px solid darkgreen;
+  min-height: 699px;
+} */
+
+#articles article {
+  width: 100%;
+  height: 130px;
+  float: left;
+  text-align: center;
+  background-color: lightpink;
+  border: 2px solid #fff;
+  margin: 8px 1px;
+  /* margin: 34px 5px; */
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 430px) {
+  aside {
+    width: 25%;
+    height: 700px;
+    float: left;
+    background-color: lightslategray;
+    color: white;
+  }
+  #articles {
+    width: 74.72%;
+    float: left;
+    background-color: lightsalmon;
+    border: 1px solid darkgreen;
+    min-height: 699px;
+  }
+  #articles article{
+    width: 30%;
+    float: left;
+    background-color: lightpink;
+    border: 1px solid darkgreen;
+    min-height: 100px;
+    margin: 35px 5px;
+  }
+}
+@media screen and (min-width: 770px) {
+  #articles article {
+    width: 30%;
+    height: 140px;
+  }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 880px){
+  #container {
+    width: 1000px;
+  }
+  header{
+    width: auto;
+  }
+}
+
+/* @media(max-width:880px){
+  #articles article{
+    width: 40%;
+  }
+}
+@media(max-width:550px){
+  #articles article{
+    width: 100%;
+    margin: 0;
+  }
+} */
+/* @media (min-width:180px){
+  #articles article{
+    width:40%;
+  }
+} */

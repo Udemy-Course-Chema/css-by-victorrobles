@@ -1,0 +1,21 @@
+#boton {
+  display: block;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid green;
+  /* transition: all 500ms; */
+  /* transition: border 500ms; */
+  transition: border 500ms, background 3s, border-radius 2s;
+}
+
+#boton:hover {
+    border-radius: 12px;
+    background-color: #25dc25;
+    border:1px solid black;
+}

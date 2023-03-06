@@ -1,0 +1,18 @@
+#menu ul{
+     text-decoration: none;
+     list-style: none;
+}
+
+.item{
+     height: 150px;
+}
+
+#pie-pagina{
+     height: 50px;
+}
+#barra{
+     height: 250px;
+}
+#barra > div{
+     height: calc(250px / 3);
+}

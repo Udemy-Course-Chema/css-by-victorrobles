@@ -1,0 +1,64 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body
+{
+    background-color: #ef5e8c;
+}
+
+ul li
+{
+    font-size: 20px;
+}
+
+ul li:first-child{
+    background-color: red;
+    color: white;
+}
+
+ul li:nth-child(2)
+{
+    background-color: brown;
+    color :white;
+}
+ul li:last-child
+{
+    background-color: #ccc;
+    font-weight: bolder;
+    color :purple;
+}
+
+#mi-enlace
+{
+    font-size: 30px;
+    color: aquamarine;
+}
+
+#mi-enlace:link
+{
+    color:red;
+}
+#mi-enlace:visited
+{
+    color:blue;
+}
+#mi-enlace:hover
+{
+    background-color: black;
+    color:white;
+}
+#mi-enlace:active
+{
+    background-color: darkolivegreen;
+    color:black;
+}
+
+input[type="text"]
+{
+    margin-top: 20px;
+    padding: 15px;
+}
+input[type="text"]:focus
+{
+    border:5px dashed  black ;
+}

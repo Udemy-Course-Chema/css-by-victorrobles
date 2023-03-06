@@ -1,0 +1,104 @@
+/**
+Selectores
+*/
+/*
+SELECTOR UNIVERSAL 
+Selecciona todos los documentos(tag) de la página
+*/
+*{
+    /* font-family: If font doesnt exist, use another font*/
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+/* Selector de Etiqueta*/
+h1{
+    background-color: red;
+    color:white;
+    padding: 10px;
+}
+#menu a{
+    font-size: 18px;
+    color:maroon;
+    text-decoration: none;
+}
+
+footer a
+{
+    color:red;
+}
+
+/*SELECTOR ID*/
+#description,
+#title
+{
+    border:5px solid black;
+    padding:15px;
+}
+#title
+{
+    background-color: blue;
+    border: 2px dashed white;
+}
+/*Selector de clase*/
+.paragraph
+{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.paragraph2
+{
+    background-color: green;
+    color:white; 
+    padding:10px;
+}
+/* .clear{
+    clear: right;
+} */
+
+
+/*Selector de Atributos*/
+#users
+{
+    border: 1px solid black;
+
+}
+#users form
+{
+    border: 5px solid blue;
+    margin: 15px 0 15px 0;
+}
+
+#users form *
+{
+    /* Permite que los elementos comporte como texto o en línea */
+    display: block;
+}
+input[type="text"]
+{
+    width: 400px;
+    margin-bottom: 15px;
+    padding:10px;
+}
+
+input[type="submit"]
+{
+    background-color: green;
+    color:white;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border:1px solid black;
+    cursor: pointer;
+}
+
+/*SELECTORES HIJOS*/
+/* La flecha ">" indica que aplica a sus hijos */
+#menu > li >  a
+{
+    font-size: 18px;
+    color: yellow;
+    text-decoration: none;
+}

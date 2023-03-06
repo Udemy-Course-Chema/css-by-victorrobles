@@ -1,0 +1,24 @@
+/*background: color image repeat position*/
+ body{
+    background-color: #ccc;
+    background-image: url('img/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: bottom bottom;
+    color:white;
+ }
+
+ #box
+ {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: green;
+    color: violet;
+ }
+
+ h2
+ {
+    color:goldenrod;
+    background-color: blueviolet;
+ }

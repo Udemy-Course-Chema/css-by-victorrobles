@@ -1,0 +1,129 @@
+@use "base";
+@use "sass:math";
+
+$primary-color: #5b09ff;
+$secondary-color: #e73326;
+$white: #fff;
+
+// Mixins | Función
+@mixin center-margin() {
+  margin: 0 auto;
+}
+
+// Herencia
+%center-margin {
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+p {
+  color: $primary-color;
+}
+
+.box {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 0 5px #5b09ff;
+
+  h2 {
+    width: 60%;
+    color: $secondary-color;
+    @include center-margin();
+
+    @media (min-width: 880px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    color: $white;
+    background-color: #b02077;
+  }
+
+  .info {
+    span {
+      background-color: #afde2e;
+      color: $primary-color;
+    }
+  }
+
+  @media (min-width: 880px) {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+%normal-alert {
+  border: 1px solid blue;
+  background-color: lightskyblue;
+  color: red;
+
+  @media (min-width: 880px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.alert {
+  @extend %normal-alert;
+  color: brown;
+}
+
+// Operators
+.probandoCalculo {
+  border: 1px solid mediumorchid;
+
+  .myDiv1 {
+    border: 4px solid red;
+    width: math.div(200px, 960px) * 100%;
+  }
+
+  .myDiv2 {
+    border: 4px solid green;
+    // width: 500px / 1920px * 100%;
+  }
+}
+
+// condicionales
+.condicionales {
+  .cond1 {
+    h2 {
+      color: $primary-color;
+
+      @if $primary-color ==color {
+        color: red;
+      } @else if $primary-color ==#342 {
+        color: $primary-color;
+        background-color: yellow;
+      } @else {
+        color: $primary-color;
+        background-color: green;
+      }
+    }
+  }
+}
+
+// Bucle
+$i: 1;
+@for $i from 1 through 10{
+     .bucle  ul li:nth-child( #{$i} ){
+      @if($i % 2 == 0){
+        background-color: red;
+        color:white;
+        font-size: #{$i}0px;
+      }@else{
+        font-size: #{$i}0px;
+        color:blue;
+      }
+     }
+}

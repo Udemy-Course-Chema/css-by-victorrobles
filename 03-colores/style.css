@@ -1,0 +1,11 @@
+/* COLORES */
+h1 {
+  /* COLORES DEL SISTEMA */
+  color:red;
+  /* COLORES HEXADECIMALES */
+  color: #ccc;
+  /* COLORES RGB */
+  color: rgb(119, 42, 213);
+  /* COLORES RGBA */
+  color: rgba(125, 220, 136, .8);
+}

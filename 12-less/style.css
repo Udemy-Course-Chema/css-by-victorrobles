@@ -1,0 +1,10 @@
+body {
+  background-color: #11a418;
+}
+h1 {
+  color: #f36412;
+}
+.box1 .dentro {
+  border: 8px solid #000;
+  box-shadow: 0 0 8px #000;
+}
